@@ -28,7 +28,6 @@ export async function getServerSideProps(
 
   const errors: any[] = [];
 
-  //load product details
   const loadData = async () => {
     return PokemonService.listPokemonTypes().then((res: any) => {
       return res.json();

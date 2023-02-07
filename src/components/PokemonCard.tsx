@@ -19,7 +19,7 @@ const PokemonCard = ({ pokemon }: { pokemon: Pokemon }) => {
             </div>
         </div>
         <div className="mt-0.5 text-left w-40 font-bold">
-            {pokemon.name}
+            {pokemon?.name}
         </div>
         <div className="flex flex-row gap-1 justify-end w-full absolute right-2 top-2">
             {pokemon?.apiTypes?.map((item) => {
